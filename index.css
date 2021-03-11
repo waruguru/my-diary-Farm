@@ -20,14 +20,48 @@ body{
     background-size: cover;
     
 } */
-html,body 
+/* html,body 
 {
    padding:0;
    margin:0;
    height:100%;
    min-height:100%;
  }
-.part1 {background-color:red; width:50%; height:50%; float:left}
-.part2 {background-color:blue; width:50%; height:50%; float:left}
-.part3 {background-color:green; width:50%; height:50%; float:left}    
-.part4 {background-color:yellow; width:50%; height:50%; float:left}
+ h3{
+     text-align: center;
+     color:aqua;
+ }
+.part1 {
+    background-image:url("https://media.npr.org/assets/img/2015/03/06/istock_000019322566xlarge_edit_custom-9d4c4a33422ae3c4775983ae0de71646537c78c4-s800-c85.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:red;
+     width:50%;
+      height:50%; 
+      float:left}
+.part2 {
+    background-image: url("https://www.onegreenplanet.org/wp-content/uploads/2017/02/shutterstock_185436203-1200x800.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:blue; 
+    width:50%; 
+    height:50%; 
+    float:left}
+.part3 {
+    background-image: url("https://c8.alamy.com/comp/A82G0K/dairy-cows-being-milked-automatically-in-a-milking-shed-in-gloucestershire-A82G0K.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:green; 
+    width:50%; 
+    height:50%; 
+    float:left}    
+.part4 {
+    background-image: url("https://www.rnz.co.nz/assets/news_crops/40229/four_col_22178653_m.jpg?1502843730");
+    background-size: cover;
+    background-size: cover;
+    background-color:yellow; 
+    width:50%;
+     height:50%; 
+     float:left} */
+
+     
