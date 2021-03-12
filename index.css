@@ -25,15 +25,15 @@ h1{
 #a{
   text-align: center;
   border: springgreen solid 3px;
-  float: left;
-  height: 300px;
+  height: 250px;
   width: 100%;
   position: absolute; 
-  flex-direction: column;
+  flex-direction: row;
   display: flex;
   background-position: center;
   margin-top: 105px;
-  padding:2px;
+  justify-content: space-evenly;
+  /* padding:2px; */
   
 
   /* flex-direction: row; sets direction of items in a row */
@@ -42,8 +42,8 @@ h1{
 }
 .choose_shed{
   border: tan solid 3px;
-  width: 25%;
-  height: 290px;
+  width: 20%;
+  height: 100%;
   background-image: url("https://149366112.v2.pressablecdn.com/wp-content/uploads/2017/02/shutterstock_185436203-scaled.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -53,14 +53,14 @@ h1{
   font-style: bold;
   font-size: large;
   color: maroon;
-  top: 100px;
+  
+
 }
 .choose_month{
-  margin-top: 0px;
+
   border: blue solid 3px;
-  margin-left: 26%;
-  width: 25%;
-  height: 290px;
+  width: 20%;
+  height: 100%;
   background-image: url("https://c8.alamy.com/comp/A82G0K/dairy-cows-being-milked-automatically-in-a-milking-shed-in-gloucestershire-A82G0K.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -73,11 +73,9 @@ h1{
   
 }
 .choose_day{
-  margin-top: 0px;
   border: rgb(255, 0, 76) solid 3px;
-  margin-left: 75%;
-  width: 25%;
-  height: 290px;
+  width: 20%;
+  height: 100%;
   background-image: url("https://image.shutterstock.com/image-photo/cows-netherlands-600w-680944396.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -89,6 +87,29 @@ h1{
   color: maroon;
 }
 
+#b{
+  text-align: center;
+  border: rgb(224, 38, 193) solid 3px;
+  height: 250px;
+  width: 100%;
+  position: absolute; 
+  flex-direction: row;
+  display: flex;
+  background-position: center;
+  margin-top: 362px;
+  justify-content: space-evenly;
+}
+#c{
+  text-align: center;
+  border: rgb(151, 160, 30) solid 3px;
+  height: 300px;
+  width: 100%;
+  position: absolute; 
+  flex-direction: row;
+  display: flex;
+  background-position: center;
+  margin-top: 412px;
+  justify-content: space-evenly;
 
   /* padding: 20px;
   background-image: url(assets/backgrounds/landing.jpg);
@@ -153,10 +174,10 @@ h1{
   } */
   
   /*hide the items when the select box is closed:*/
-  .select-hide {
+  /* .select-hide {
     display: none;
   }
   
   .select-items div:hover, .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);
-  } */
+  } */ */
