@@ -61,7 +61,7 @@ h1{
   border: blue solid 3px;
   width: 20%;
   height: 100%;
-  background-image: url("https://c8.alamy.com/comp/A82G0K/dairy-cows-being-milked-automatically-in-a-milking-shed-in-gloucestershire-A82G0K.jpg");
+  background-image: url("https://www.aplusmilk-australia.com.au/wp-content/uploads/2020/06/Dairy-milking-shed.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -76,7 +76,7 @@ h1{
   border: rgb(255, 0, 76) solid 3px;
   width: 20%;
   height: 100%;
-  background-image: url("https://image.shutterstock.com/image-photo/cows-netherlands-600w-680944396.jpg");
+  background-image: url("https://www.holsteinusa.com/images/holstein101_terms5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -99,6 +99,29 @@ h1{
   margin-top: 362px;
   justify-content: space-evenly;
 }
+.milk_weekly{
+  border: orange solid 2px;
+  height: 100%;
+  width:30%;
+  background-image: url('http://ratopati.prixa.net/media/albums/Dairy_lfG8rl8mQE.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.milk_yearly{
+  .milk_monthly{
+    border: orange solid 2px;
+    height: 100%;
+    width:30%;
+    background-image: url('https://img.etimg.com/thumb/msid-65116736,width-300,imgsize-111051,,resizemode-4,quality-100/milk-cow-bccl.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+
+
 #c{
   text-align: center;
   border: rgb(151, 160, 30) solid 3px;
@@ -108,8 +131,10 @@ h1{
   flex-direction: row;
   display: flex;
   background-position: center;
-  margin-top: 412px;
+  margin-top: 620px;
   justify-content: space-evenly;
+}
+
 
   /* padding: 20px;
   background-image: url(assets/backgrounds/landing.jpg);
