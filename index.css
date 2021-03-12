@@ -1,67 +1,162 @@
-/* h1{
-    border: solid greenyellow 10px;
-    color:maroon;
-    text-align: center;
-    margin-top: 10px;
-    height: 30px;
+Body{
+  background-color: #712c35;
+  text-align: center;
+  color: maroon;
+  margin: 0;
 }
-body{
-    @media only screen and (min-width: 1200px)
-    background-repeat: no-repeat;
-    background-image: url("https://media.npr.org/assets/img/2015/03/06/istock_000019322566xlarge_edit_custom-9d4c4a33422ae3c4775983ae0de71646537c78c4-s800-c85.jpg");
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    text-align: center;
+#header{
+  width: 100%;
+  height: 90px;
+  text-align: center;
+  float: left;
+  border: teal solid 2px;
+  background-color: whitesmoke;
+  margin: 10px;
   
-    background-color: lightgoldenrodyellow;
+}
+h1{
+  
+}
+/* section{
+  border: aqua solid 2px; */
 
-    background-size: cover;
-    
-} */
-/* html,body 
-{
-   padding:0;
-   margin:0;
-   height:100%;
-   min-height:100%;
- }
- h3{
-     text-align: center;
-     color:aqua;
- }
-.part1 {
-    background-image:url("https://media.npr.org/assets/img/2015/03/06/istock_000019322566xlarge_edit_custom-9d4c4a33422ae3c4775983ae0de71646537c78c4-s800-c85.jpg") ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color:red;
-     width:50%;
-      height:50%; 
-      float:left}
-.part2 {
-    background-image: url("https://www.onegreenplanet.org/wp-content/uploads/2017/02/shutterstock_185436203-1200x800.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color:blue; 
-    width:50%; 
-    height:50%; 
-    float:left}
-.part3 {
-    background-image: url("https://c8.alamy.com/comp/A82G0K/dairy-cows-being-milked-automatically-in-a-milking-shed-in-gloucestershire-A82G0K.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color:green; 
-    width:50%; 
-    height:50%; 
-    float:left}    
-.part4 {
-    background-image: url("https://www.rnz.co.nz/assets/news_crops/40229/four_col_22178653_m.jpg?1502843730");
-    background-size: cover;
-    background-size: cover;
-    background-color:yellow; 
-    width:50%;
-     height:50%; 
-     float:left} */
 
-     
+
+#a{
+  text-align: center;
+  border: springgreen solid 3px;
+  float: left;
+  height: 300px;
+  width: 100%;
+  position: absolute; 
+  flex-direction: column;
+  display: flex;
+  background-position: center;
+  margin-top: 105px;
+  padding:2px;
+  
+
+  /* flex-direction: row; sets direction of items in a row */
+  /* justify-content: space-evenly; space between Distributes items evenly with equal space around them. */
+  /* align-items: flex-start; */
+}
+.choose_shed{
+  border: tan solid 3px;
+  width: 25%;
+  height: 290px;
+  background-image: url("https://149366112.v2.pressablecdn.com/wp-content/uploads/2017/02/shutterstock_185436203-scaled.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  text-align: left;
+  font-style: bold;
+  font-size: large;
+  color: maroon;
+  top: 100px;
+}
+.choose_month{
+  margin-top: 0px;
+  border: blue solid 3px;
+  margin-left: 26%;
+  width: 25%;
+  height: 290px;
+  background-image: url("https://c8.alamy.com/comp/A82G0K/dairy-cows-being-milked-automatically-in-a-milking-shed-in-gloucestershire-A82G0K.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  text-align: left;
+  font-style: bold;
+  font-size: large;
+  color: maroon;
+  
+}
+.choose_day{
+  margin-top: 0px;
+  border: rgb(255, 0, 76) solid 3px;
+  margin-left: 75%;
+  width: 25%;
+  height: 290px;
+  background-image: url("https://image.shutterstock.com/image-photo/cows-netherlands-600w-680944396.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  text-align: left;
+  font-style: bold;
+  font-size: large;
+  color: maroon;
+}
+
+
+  /* padding: 20px;
+  background-image: url(assets/backgrounds/landing.jpg);
+  background-repeat: no-repeat; */
+  /* height: 200px; */
+  /* width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+   */
+/* } */
+/* .custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  /* }
+  
+  .select-selected {
+    background-color: DodgerBlue;
+  }
+   */
+  /*style the arrow inside the select element:*/
+  /* .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+   */
+  /*point the arrow upwards when the select box is open (active):*/
+  /* .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  } */
+  
+  /*style the items (options), including the selected item:*/
+  /* .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  } */
+  
+  /*style items (options):*/
+  /* .select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  } */
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  } */
