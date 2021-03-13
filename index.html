@@ -48,6 +48,7 @@
     
                     </div>
                     <div class="choose_day">
+                        <h2>Choose The Day</h2>
                         <div class="drop-down">
                             <select name="" id="">
                                 <option value="0">Day1</option>
@@ -87,18 +88,32 @@
 
     
                     </div>
-                    <div class="total_production">
-    
+                    <div class='fill_productions'>
+                        <form>
+                            <form>
+                                <label><b>Enter Todays Production</b></label>
+                                <input type="text" name="message" id="user_input">
+                              </form>
+                            
+                              <input type="submit" onclick="showInput();"><br/>
+                              <label>Your input: </label>
+                              <p><span id='display'></span></p>
+
+                            <!-- <label for="day">Day Production:</label><br>
+                            <input type="number" id="day" name="day">
+                          </form> 
+                          <button type="submit" form="form" value="Submit">Submit</button> -->
                     </div>
-    
-                </div>
+                  
 
                 
             </container>
 
 
             <container id="b">
+                
                 <div class="milk_weekly">
+                    
 
                 </div>
                 <div class="milk_monthly">
@@ -113,6 +128,15 @@
 
             <container id="c">
                 <div class="day_income">
+                    
+                    
+            <!-- <div id="button">
+                <input
+                  class="button"
+                  type="button"
+                  value="Generate"
+                  onclick="incomeOverTime(rate(), time()); leapYear(); location.href='report.html'" -->
+                
 
                 </div>
                 <div class="month_income">
