@@ -53,6 +53,8 @@ h1{
   font-style: bold;
   font-size: large;
   color: maroon;
+  position: relative;
+  font-family: Arial;
   
 
 }
@@ -99,7 +101,7 @@ h1{
   margin-top: 362px;
   justify-content: space-evenly;
 }
-.milk_weekly{
+/* .milk_weekly{
   border: orange solid 2px;
   height: 100%;
   width:30%;
@@ -117,7 +119,7 @@ h1{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-  }
+  } */
 }
 
 
