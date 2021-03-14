@@ -237,16 +237,35 @@ function onMonthChange(){
      var   dict={}
      dict=day;
         console.log("Caculating shade A day ", day);
-          console.log("Caculating shade A dayi production ", dict['production']);
+          console.log("Caculating shade A day i production ", dict['production']);
           total_=Number(total_)+Number(dict['production']);
 
         
 
       }
 
-
+      var shade_a_week=document.getElementById("shade_a_week");
+      shade_a_week.innerHTML=(total_/7).toString();
+  
     // total_=Number(total_)+Number(shadeA[i]);
+     
+    var total_b=0;
 
+    for ( var i=0; i<=shadeB.length; i++){
+      var day = shadeB[i];
+      if(!day==undefined||! day==''){
+     var   dict={}
+     dict=day;
+        console.log("Caculating shade B day ", day);
+          console.log("Caculating shade B day i production ", dict['production']);
+          total_=Number(total_b)+Number(dict['production']);
+
+        
+
+      }
+
+      var shade_b_week=document.getElementById("shade_b_week");
+      shade_b_week.innerHTML=(total_b/7).toString();
     }
     console.log("Caculating production  total ", total_);
 
@@ -255,7 +274,7 @@ function onMonthChange(){
 
 
 
-  }
+  }}
   function onDayChange(){
     total=0;
     document.getElementById("shade_b").innerHTML='';

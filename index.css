@@ -33,6 +33,7 @@ h1{
   background-position: center;
   margin-top: 105px;
   justify-content: space-evenly;
+  opacity: 0.7;
   
 }
 .choose_shed{
@@ -113,7 +114,8 @@ font-size: x-large;
   justify-content: space-evenly;
   text-align: left;
   color: black;
-font-size:large;
+  font-size:large;
+  opacity: 0.7;
 }
 h3{
   font-size: small;
@@ -166,7 +168,7 @@ h3{
 
 #c{
   text-align: center;
-  border: rgb(151, 160, 30) solid 3px;
+  border: white solid 3px;
   height: 330px;
   width: 100%;
   position: absolute; 
@@ -178,12 +180,13 @@ h3{
   text-align: left;
   color: black;
   font-size: large;
+  opacity: 0.7;
 }
 h3{
   font-size: small;
 }
 .day_income{
-  border: yellow solid 2px;
+  border: white solid 2px;
     height: 100%;
     width:25%;
     background-image: url('https://media.istockphoto.com/photos/set-of-milk-ripple-splash-background-element-picture-id1169344107?k=6&m=1169344107&s=612x612&w=0&h=Q9ln81IXUPmYHd2HCTmDZpU5gctnZquWIrMY_nMqxzI=');
@@ -194,7 +197,7 @@ h3{
     }
     .week_income{
   
-        border: mediumaquamarine solid 2px;
+        border: white solid 2px;
           height: 100%;
           width:25%;
           background-image: url('https://media.istockphoto.com/photos/toasting-with-milk-glass-picture-id108195812?k=6&m=108195812&s=612x612&w=0&h=f7bE-4bmJI014jr6ChAJ6ZlhZBvqLGfrPXSKBsNZSEI=');
@@ -205,7 +208,7 @@ h3{
           }
     .month_income{
      
-        border: greenyellow solid 2px;
+        border: white solid 2px;
           height: 100%;
           width:25%;
           background-image: url('https://media.istockphoto.com/photos/milk-or-yogurt-splash-isolated-picture-id1134003048?k=6&m=1134003048&s=612x612&w=0&h=Bxa6T1SDDzBj0tfRCp3zvGvRFMu-D2wxnzci5Rffcho=');
@@ -216,7 +219,7 @@ h3{
           }
           .year_income{
            
-              border: red solid 2px;
+              border: white solid 2px;
                 height: 100%;
                 width:25%;
                 background-image: url('https://media.istockphoto.com/vectors/splash-milk-vector-id1165645566?k=6&m=1165645566&s=612x612&w=0&h=PJw4peWMq4nTWDjOPwtROzisdP3C6hgwkwpQXGcwlM0=');
