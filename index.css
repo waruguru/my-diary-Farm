@@ -86,7 +86,7 @@ color: white;
 border: white solid 2px;
 height: 100%;
 width: 25%;
-background-image: url('https://media.istockphoto.com/vectors/splash-milk-vector-id1165645566?k=6&m=1165645566&s=612x612&w=0&h=PJw4peWMq4nTWDjOPwtROzisdP3C6hgwkwpQXGcwlM0=');
+background-image: url('https://www.dairydiscoveryzone.com/sites/default/files/holstein.jpg');
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -94,7 +94,7 @@ text-align: left;
 opacity: 0.5;
 font-size: large;
 font-style: bold;
-color: black;
+color: white;
 font-size: x-large;
 
 
@@ -154,7 +154,7 @@ h3{
     border: white solid 2px;
     height: 100%;
     width:25%;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP9ncUkaNQtX-PztePzyBjKWHvqq9yoKo-gg&usqp=CAU');
+    background-image: url('https://thumbs.dreamstime.com/z/milk-splash-14275789.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -176,12 +176,17 @@ h3{
   margin-top: 620px;
   justify-content: space-evenly;
   text-align: left;
+  color: black;
+  font-size: large;
+}
+h3{
+  font-size: small;
 }
 .day_income{
   border: yellow solid 2px;
     height: 100%;
     width:25%;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP9ncUkaNQtX-PztePzyBjKWHvqq9yoKo-gg&usqp=CAU');
+    background-image: url('https://media.istockphoto.com/photos/set-of-milk-ripple-splash-background-element-picture-id1169344107?k=6&m=1169344107&s=612x612&w=0&h=Q9ln81IXUPmYHd2HCTmDZpU5gctnZquWIrMY_nMqxzI=');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -192,7 +197,7 @@ h3{
         border: mediumaquamarine solid 2px;
           height: 100%;
           width:25%;
-          background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP9ncUkaNQtX-PztePzyBjKWHvqq9yoKo-gg&usqp=CAU');
+          background-image: url('https://media.istockphoto.com/photos/toasting-with-milk-glass-picture-id108195812?k=6&m=108195812&s=612x612&w=0&h=f7bE-4bmJI014jr6ChAJ6ZlhZBvqLGfrPXSKBsNZSEI=');
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
@@ -203,7 +208,7 @@ h3{
         border: greenyellow solid 2px;
           height: 100%;
           width:25%;
-          background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP9ncUkaNQtX-PztePzyBjKWHvqq9yoKo-gg&usqp=CAU');
+          background-image: url('https://media.istockphoto.com/photos/milk-or-yogurt-splash-isolated-picture-id1134003048?k=6&m=1134003048&s=612x612&w=0&h=Bxa6T1SDDzBj0tfRCp3zvGvRFMu-D2wxnzci5Rffcho=');
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
@@ -214,7 +219,7 @@ h3{
               border: red solid 2px;
                 height: 100%;
                 width:25%;
-                background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP9ncUkaNQtX-PztePzyBjKWHvqq9yoKo-gg&usqp=CAU');
+                background-image: url('https://media.istockphoto.com/vectors/splash-milk-vector-id1165645566?k=6&m=1165645566&s=612x612&w=0&h=PJw4peWMq4nTWDjOPwtROzisdP3C6hgwkwpQXGcwlM0=');
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;

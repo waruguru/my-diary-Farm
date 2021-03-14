@@ -50,7 +50,7 @@
                     <div class="choose_day">
                         <h2>Choose The Day</h2>
                         <div class="drop-down">
-                            <select name="" id="">
+                            <select name="" id="day">
                                 <option value="0">Day1</option>
                                 <option value="1">Day2</option>
                                 <option value="2">Day3</option>
@@ -89,15 +89,18 @@
     
                     </div>
                     <div class='fill_productions'>
-                        <form>
+                       
                             <form>
                                 <label><b>Enter Todays Production</b></label>
-                                <input type="text" name="message" id="user_input">
+                                <input type="number" name="message" id="milk" minlength="1" maxlength="4">
                               </form>
                             
-                              <input type="submit" onclick="showInput();"><br/>
+                              <input type="submit" onclick="milkProduct();"><br/>
                               <label>Your input: </label>
                               <p><span id='display'></span></p>
+
+                              
+                 
 
                             <!-- <label for="day">Day Production:</label><br>
                             <input type="number" id="day" name="day">
@@ -176,7 +179,7 @@
 
                 </div>
                 <div class="week_income">
-                    <h2>The Daily Income </h2>
+                    <h2>The Week Income </h2>
                    <h3>Shed A:</h3>
                    <h3>Shed B:</h3>
                    <h3>Shed C</h3>
@@ -186,7 +189,7 @@
 
                 </div>
                 <div class="month_income">
-                    <h2>The Daily Income </h2>
+                    <h2>The Month Income </h2>
                    <h3>Shed A:</h3>
                    <h3>Shed B:</h3>
                    <h3>Shed C</h3>
@@ -196,7 +199,7 @@
 
                 </div>
                 <div class="year_income">
-                    <h2>The Daily Income </h2>
+                    <h2>The Year Income </h2>
                    <h3>Shed A:</h3>
                    <h3>Shed B:</h3>
                    <h3>Shed C</h3>
