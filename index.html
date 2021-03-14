@@ -50,7 +50,7 @@
                     <div class="choose_day">
                         <h2>Choose The Day</h2>
                         <div class="drop-down">
-                            <select name="" id="day">
+                            <select name="" id="day" onclick="onDayChange()">
                               
                                 
                             </select>
@@ -71,7 +71,8 @@
                               <p><span id='display'></span></p>
 
                               
-                 
+                              <div class="row"><button onclick="calculate()">Calculate</button></div>
+
 
                             <!-- <label for="day">Day Production:</label><br>
                             <input type="number" id="day" name="day">
@@ -87,22 +88,23 @@
             <container id="b">
                 <div class="milk_daily">
                    <h2>The Daily Productions </h2>
-                   <h3>Shed A:</h3>
-                   <h3>Shed B:</h3>
-                   <h3>Shed C</h3>
-                   <h3>Shed D:</h3>
-                   <h3>Total:</h3>
+                   <h3>Shed A: <span id="shade_a"></span> </h3>
+                   <h3>Shed B: <span id="shade_b"></span></h3>
+                   <h3>Shed C <span id="shade_c"></span></h3>
+                   <h3>Shed D: <span id="shade_d"></span></h3>
+                   <h3>Total: <span id="total"></span></h3>
 
 
                 </div>
                 
                 <div class="milk_weekly">
                     <h2>The Weekly Productions </h2>
-                   <h3>Shed A:</h3>
-                   <h3>Shed B:</h3>
-                   <h3>Shed C</h3>
-                   <h3>Shed D:</h3>
-                   <h3>Total:</h3>
+                   <h3>Shed A: <span id="shade_a_week"></span></h3>
+                   <h3>Shed B: <span id="shade_b_week"></span></h3>
+                   <h3>Shed C<span id="shade_c_week"></span></h3>
+                   <h3>Shed D: <span id="shade_c_week"></span></h3>
+                   <h3>Total: <span id="shade_d_week"></span></h3>
+                   <h3>Total: <span id="total_week"></span></h3>
                     
 
                 </div>
@@ -182,7 +184,6 @@
 
             </container>
         </section>
-        <div class="row"><button onclick="calculate()">Calculate</button></div>
 
         <script src="diary_farm.js"></script>
     </body>

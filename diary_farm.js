@@ -47,6 +47,7 @@ const shadeB=[];
 const shadeC=[];
 const shadeD=[];
 
+var total=0;
 
 function onMonthChange(){
   var value=document.getElementById("month").value;
@@ -133,9 +134,11 @@ function onMonthChange(){
 
 
 }
+
   //for milk production function
   function submitMilkProduction(){
     console.log("submitting milk production");
+    var total_production= document.getElementById("total");
 
     var shade=document.getElementById("shed").value;
     if (shade=="0"){
@@ -145,24 +148,123 @@ function onMonthChange(){
       var days_production= document.getElementById("milk").value;
       console.log(" day: ", day, " Month: ", Month, "Production: ", days_production);
 
+      var valueToPush = { }; // or "var valueToPush = new Object();" which is the same
+      valueToPush["month"] =Month;
+      valueToPush["day"] = day;
+      valueToPush["production"] = days_production;
+      shadeA.push(valueToPush);
+      window.localStorage.setItem('shadeA', JSON.stringify(shadeA));
+      var shade_a_production=document.getElementById("shade_a");
+      shade_a_production.innerHTML=days_production.toString();
+      total=Number(total)+Number(days_production);
+      total_production.innerHTML=total.toString();
+      var days_production= document.getElementById("milk").value='';
+ 
 
+
+      console.log(" pushed values into array ", shadeA);
 
     }else if(shade=="1"){
       console.log("At shade B");
+      var Month=document.getElementById("month").value;
+      var day=document.getElementById("day").value;
+      var days_production= document.getElementById("milk").value;
+      console.log(" day: ", day, " Month: ", Month, "Production: ", days_production);
 
+      var valueToPush = { }; // or "var valueToPush = new Object();" which is the same
+      valueToPush["month"] =Month;
+      valueToPush["day"] = day;
+      valueToPush["production"] = days_production;
+      shadeA.push(valueToPush);
+      window.localStorage.setItem('shadeB', JSON.stringify(shadeB));
+      var shade_a_production=document.getElementById("shade_b");
+      shade_a_production.innerHTML=days_production.toString();
+      total=Number(total)+Number(days_production);
+      total_production.innerHTML=total.toString();
+      var days_production= document.getElementById("milk").value='';
 
     }else if(shade=="2")
     {
       console.log("At shade C");
+      var Month=document.getElementById("month").value;
+      var day=document.getElementById("day").value;
+      var days_production= document.getElementById("milk").value;
+      console.log(" day: ", day, " Month: ", Month, "Production: ", days_production);
+
+      var valueToPush = { }; // or "var valueToPush = new Object();" which is the same
+      valueToPush["month"] =Month;
+      valueToPush["day"] = day;
+      valueToPush["production"] = days_production;
+      shadeA.push(valueToPush);
+      window.localStorage.setItem('shadeC', JSON.stringify(shadeC));
+      var shade_a_production=document.getElementById("shade_c");
+      shade_a_production.innerHTML=days_production.toString();
+      total=Number(total)+Number(days_production);
+      total_production.innerHTML=total.toString();
+      var days_production= document.getElementById("milk").value='';
 
     }else{
       console.log("At shade D");
+      var Month=document.getElementById("month").value;
+      var day=document.getElementById("day").value;
+      var days_production= document.getElementById("milk").value;
+      console.log(" day: ", day, " Month: ", Month, "Production: ", days_production);
+
+      var valueToPush = { }; // or "var valueToPush = new Object();" which is the same
+      valueToPush["month"] =Month;
+      valueToPush["day"] = day;
+      valueToPush["production"] = days_production;
+      shadeD.push(valueToPush);
+      window.localStorage.setItem('shadeD', JSON.stringify(shadeD));
+      var shade_a_production=document.getElementById("shade_d");
+      shade_a_production.innerHTML=days_production.toString();
+      total=Number(total)+Number(days_production);
+      total_production.innerHTML=total.toString();
+      var days_production= document.getElementById("milk").value='';
 
     }
     console.log( "Shade selected : ", shade)
   }
   function calculate(){
 
-    consolen.log("Caculating production");
-    
+    console.log("Caculating shade A ");
+    // weekly calculation
+    var total_=0;
+
+    for ( var i=0; i<=shadeA.length; i++){
+      var day = shadeA[i];
+      if(!day==undefined||! day==''){
+     var   dict={}
+     dict=day;
+        console.log("Caculating shade A day ", day);
+          console.log("Caculating shade A dayi production ", dict['production']);
+          total_=Number(total_)+Number(dict['production']);
+
+        
+
+      }
+
+
+    // total_=Number(total_)+Number(shadeA[i]);
+
+    }
+    console.log("Caculating production  total ", total_);
+
+    console.log("Caculating production ");
+
+
+
+
+  }
+  function onDayChange(){
+    total=0;
+    document.getElementById("shade_b").innerHTML='';
+    document.getElementById("shade_d").innerHTML='';
+    document.getElementById("shade_c").innerHTML='';
+    document.getElementById("shade_a").innerHTML='';
+    document.getElementById("total").innerHTML='';
+
+
+
+
   }
