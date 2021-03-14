@@ -42,36 +42,127 @@ const month=["January","February","March","April","May","June","July","August","
 const numberOf31Days=[30];
 const numberOf27Days=[28];
 const numberOf30Days=[29];
+const shadeA=[];
+const shadeB=[];
+const shadeC=[];
+const shadeD=[];
 
 
 function onMonthChange(){
   var value=document.getElementById("month").value;
   console.log(" Month change : ", value);
   var daySelect=document.getElementById("day");
-  if(value===0||value===2||value===4||value===6||value===7||value===9||value===11){
+ 
+  if(value=="0"||value==="2"||value=="4"||value=="6"||value=="7"||value=="9"||value=="11"){
     // 31 days 
-    index=0;
-    for(element in numberOf31Days){
-      var opt= document.createElement("option");
-      opt.text="DAY "+index+1;
-      opt.value=index;
-    
-      daySelect.appendChild(opt);
-      index++;
+    var opt= document.createElement("option");
+    var newOption;
+    var index=1;
+    daySelect.options = null;
+    newOption=null;
 
+    // create and add new options 
+    for (var i=0; i<31; i++) {
+        newOption = document.createElement("option"); 
+        newOption.value = index;
+        newOption.text="Day "+index;
+        try { 
+          daySelect.add(newOption); 
+            } 
+        catch (e) { 
+          daySelect.appendChild(newOption);
+            } 
+            index++;
     }
+    
 
+  
+      console.log("Days 31 selected")
 
-  }else if(value===1){
+  }else if(value=="1"){
     //feb 29days
+    var newOption;
+    var index=1;
+    daySelect.options = null;
+    newOption=null;
+
+    // create and add new options 
+    for (var i=0; i<28; i++) {
+
+
+        newOption = document.createElement("option"); 
+        newOption.value = index;
+        newOption.text="Day "+index;
+        try { 
+          daySelect.add(newOption); 
+            } 
+        catch (e) { 
+          daySelect.appendChild(newOption);
+            } 
+            index++;
+    }
+    console.log("Days 28 selected")
 
 
   }else{
     //30 days 
+    var opt= document.createElement("option");
+    var newOption;
+    var index=1;
+    daySelect.options = null;
+    newOption=null;
 
+    // create and add new options 
+    for (var i=0; i<30; i++) {
+
+
+        newOption = document.createElement("option"); 
+        newOption.value = index;
+        newOption.text="Day "+index;
+        try { 
+          daySelect.add(newOption); 
+            } 
+        catch (e) { 
+          daySelect.appendChild(newOption);
+            } 
+            index++;
+    }
+    console.log("Days 30 selected")
 
   }
 
 
-
 }
+  //for milk production function
+  function submitMilkProduction(){
+    console.log("submitting milk production");
+
+    var shade=document.getElementById("shed").value;
+    if (shade=="0"){
+      console.log("At shade A");
+      var Month=document.getElementById("month").value;
+      var day=document.getElementById("day").value;
+      var days_production= document.getElementById("milk").value;
+      console.log(" day: ", day, " Month: ", Month, "Production: ", days_production);
+
+
+
+    }else if(shade=="1"){
+      console.log("At shade B");
+
+
+    }else if(shade=="2")
+    {
+      console.log("At shade C");
+
+    }else{
+      console.log("At shade D");
+
+    }
+    console.log( "Shade selected : ", shade)
+  }
+  function calculate(){
+
+    consolen.log("Caculating production");
+    
+  }
