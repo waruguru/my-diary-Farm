@@ -38,4 +38,40 @@
  });
 const day=["Day1","Day2","Day3","Day4","Day5","Day6","Day7","Day8","Day9","Day10","Day11","Day12","Day13","Day14","Day15","Day16","Day17","Day18","Day19","Day20","Day21","Day22","Day23","Day24","Day25","Day26","Day27","Day28","Day29","Day30","Day31"];
 const shed=["Shed A","Shed B","Shed C","Shed D"];
-const month=["January","February","March","April","May","June","July","August","September","December"];
+const month=["January","February","March","April","May","June","July","August","September","October","November","December"];
+const numberOf31Days=[30];
+const numberOf27Days=[28];
+const numberOf30Days=[29];
+
+
+function onMonthChange(){
+  var value=document.getElementById("month").value;
+  console.log(" Month change : ", value);
+  var daySelect=document.getElementById("day");
+  if(value===0||value===2||value===4||value===6||value===7||value===9||value===11){
+    // 31 days 
+    index=0;
+    for(element in numberOf31Days){
+      var opt= document.createElement("option");
+      opt.text="DAY "+index+1;
+      opt.value=index;
+    
+      daySelect.appendChild(opt);
+      index++;
+
+    }
+
+
+  }else if(value===1){
+    //feb 29days
+
+
+  }else{
+    //30 days 
+
+
+  }
+
+
+
+}
