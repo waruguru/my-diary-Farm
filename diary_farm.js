@@ -75,3 +75,32 @@ function onMonthChange(){
 
 
 }
+1,4 +81,9 @@ input{
+  background-color: hsl(219, 39%, 60%);
+  width: 100%;
+  height: 42px;
+}
+
+#alert{
+  color: rgb(255, 108, 108);
+  margin-top: 85px;
+}
+7 index.html
+@@ -38,7 +38,7 @@ <h3>Income Estimates</h3>
+
+    <div class="input-field">
+      <label for="period">Period (days)</label>
+      <input class="time" list="time" name="time" id="period" value="0"/>
+      <input class="time" list="time" name="time" id="period"/>
+      <datalist id="time">
+        <option value="Weekly"></option>
+        <option value="Monthly"></option>
+@@ -49,10 +49,11 @@ <h3>Income Estimates</h3>
+    <input
+      class="button"
+      type="button"
+      value="Generate"
+      onclick="display(); incomeOverTime(rate(), time()); leapYear();"
+      value="Generate report"
+      onclick="display();"
+    />
